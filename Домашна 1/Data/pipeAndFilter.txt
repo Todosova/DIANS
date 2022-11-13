@@ -1,0 +1,3 @@
+osmfilter macedonia-latest.osm_01.osm --keep="amenity=restaurant" | osmConvert - --all-to-nodes --csv="@id @lon @lat name:en cuisine" --csv-headline --csv-separator="," -o="RestoraniSkopje.csv"
+Со внес на оваа команда во command Prompt ги извлекуваме и филтрираме потребните информации за сите ресторани на нивно на Македонија.
+Мора да се запази osmfilter,osmConvert заедно со фајлот macedonia-latest.osm_01.osm да се наоѓаат на исто место.Потоа со помош на филтрите кои што ги нуди Excel, успеавме да ги да ги избришеме сите податоци кои беа со null вредности.
